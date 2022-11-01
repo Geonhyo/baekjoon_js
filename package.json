@@ -1,0 +1,12 @@
+{
+  "name": "baekjoon_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1000_SumOfTwoNum/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
