@@ -1,21 +1,18 @@
 const input = require('fs').readFileSync('example.txt').toString().split(" ");
 const month = parseInt(input[0]);
-const day = parseInt(input[1]);
-let days;
+let date = parseInt(input[1]);
 
-const dateList = ["SUN", "MON","TUE", "WED", "THU", "FRI", "SAT"]
+const dayList = ["SUN", "MON","TUE", "WED", "THU", "FRI", "SAT"]
 
-if(month === 1) {
-    days = day;
-}
+if(month === 1) {}
 else if(month === 2) {
-    days = day + 31;
+    date = date + 31;
 }
 else if(month <= 7) {
-    days = day + (month - 1) * 30 + Math.ceil((month - 1)/2) - 2;
+    date = date + (month - 1) * 30 + Math.ceil((month - 1)/2) - 2;
 }
 else {
-    days = day + (month - 1) * 30 + Math.ceil(month/2) - 2;
+    date = date + (month - 1) * 30 + Math.ceil(month/2) - 2;
 }
 
-console.log(dateList[days%7]);
+console.log(dayList[date%7]);
